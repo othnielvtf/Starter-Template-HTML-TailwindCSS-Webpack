@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Webpack Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <header class="bg-blue-600 text-white shadow-md">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-white">My Tailwind Project</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#" class="hover:text-blue-200">Home</a></li>
+          <li><a href="#" class="hover:text-blue-200">About</a></li>
+          <li><a href="#" class="hover:text-blue-200">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 py-8">
+    <section class="bg-white shadow-lg rounded-lg p-8 mb-8">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-800">Welcome to My Tailwind CSS Webpack Homepage!</h2>
+      <p class="text-gray-600 mb-4">This page is served from the <code class="bg-gray-200 rounded p-1 text-sm">src/</code> directory with Tailwind CSS and hot reloading enabled.</p>
+      <a href="#" class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Learn More</a>
+    </section>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Feature 1</h3>
+        <p class="text-gray-600">Description of feature 1 goes here.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Feature 2</h3>
+        <p class="text-gray-600">Description of feature 2 goes here.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2 text-gray-800">Feature 3</h3>
+        <p class="text-gray-600">Description of feature 3 goes here.</p>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-gray-800 text-white mt-12">
+    <div class="container mx-auto px-4 py-8">
+      <div class="flex flex-wrap justify-between">
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h3 class="text-xl font-semibold mb-2">My Tailwind CSS Webpack Project</h3>
+          <p class="text-gray-400">A sample project showcasing Tailwind CSS and Webpack.</p>
+        </div>
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h4 class="text-lg font-semibold mb-2">Quick Links</h4>
+          <ul class="text-gray-400">
+            <li><a href="#" class="hover:text-white">Home</a></li>
+            <li><a href="#" class="hover:text-white">About</a></li>
+            <li><a href="#" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/3">
+          <h4 class="text-lg font-semibold mb-2">Connect</h4>
+          <p class="text-gray-400">Follow us on social media:</p>
+          <div class="flex space-x-4 mt-2">
+            <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+            <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
+            <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400">
+        <p>© <span id="current-year"></span> My Tailwind CSS Webpack Project. All rights reserved.</p>
+      </div>
+      <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+      </script>
+    </div>
+  </footer>
+</body>
+</html>
