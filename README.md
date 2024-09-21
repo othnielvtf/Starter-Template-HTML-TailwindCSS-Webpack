@@ -1,6 +1,8 @@
 # Starter Template HTML Tailwind Webpack
 
 A starter template for HTML with TailwindCSS and Webpack.
+Vercel link: https://starter-template-html-tailwind-css-webpack.vercel.app/
+*Need to change build directory from public to dist
 
 ## Requirements
 
